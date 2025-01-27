@@ -10,13 +10,22 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
+    "@nuxt-themes/docus": "^1.15.1",
     "@nuxt/content": "^3.0.0",
     "@nuxt/fonts": "0.10.3",
     "@nuxt/icon": "1.10.3",
     "@nuxt/image": "1.9.0",
     "@nuxtjs/color-mode": "3.5.2",
     "@nuxtjs/tailwindcss": "6.13.1",
-    "nuxt": "^3.15.2"
+    "@radix-icons/vue": "^1.0.0",
+    "@vueuse/nuxt": "12.5.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "nuxt": "^3.15.2",
+    "radix-vue": "^1.9.12",
+    "shadcn-nuxt": "0.11.3",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "typescript": "^5.7.3"
