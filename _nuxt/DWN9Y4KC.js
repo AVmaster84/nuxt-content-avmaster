@@ -1,0 +1,1 @@
+import{j as r,i as n,c as o,V as s}from"./BaoIbGUa.js";const t={};function c(e,a){return n(),o("strong",null,[s(e.$slots,"default")])}const _=Object.assign(r(t,[["render",c]]),{__name:"ProseStrong"});export{_ as default};

@@ -1,0 +1,1 @@
+import{j as o,i as s,c as r,V as c}from"./BaoIbGUa.js";const n={};function t(e,a){return s(),r("code",null,[c(e.$slots,"default")])}const _=Object.assign(o(n,[["render",t]]),{__name:"ProseCode"});export{_ as default};
