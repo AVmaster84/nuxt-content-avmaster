@@ -1,1 +1,0 @@
-import{j as o,i as s,c as r,V as t}from"./BaoIbGUa.js";const n={};function c(e,a){return s(),r("tbody",null,[t(e.$slots,"default")])}const _=Object.assign(o(n,[["render",c]]),{__name:"ProseTbody"});export{_ as default};
