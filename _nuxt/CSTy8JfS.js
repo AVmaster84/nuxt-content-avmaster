@@ -1,0 +1,1 @@
+import{d as s,q as a,P as n,O as p}from"./BojtbRQZ.js";import{u}from"./BY8ebht-.js";import{q as c}from"./rkvIXQBL.js";const l=s({__name:"index",async setup(_){let t,e;const o=a();return[t,e]=n(()=>u(o.path,()=>c("content").path(o.path).first(),"$pqtWcjQkdb")),t=await t,e(),(r,i)=>p(r.$slots,"default")}});export{l as default};
