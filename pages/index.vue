@@ -1,13 +1,12 @@
-<template>
-  <div>
-    <Slot></Slot>
-  </div>
-</template>
-
-<script lang="ts" setup>
+<script setup lang="ts">
+const route = useRoute()
+const { data: page } = await useAsyncData(route.path, () => {
+  return queryCollection('content').path(route.path).first()
+})
 
 </script>
+<template>
+   <slot />
 
-<style lang="scss" scoped>
-
-</style>
+   
+</template>

@@ -1,13 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/content',
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
+    '@nuxt/content',
   ],
   icon: {
     serverBundle: {
@@ -16,6 +16,34 @@ export default defineNuxtConfig({
   },
   fonts: {
     
+  },
+  content: {
+    highlight: {
+      theme: {
+        default: 'github-light',
+        dark: 'github-dark',
+      },
+      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini'],
+    },
+    navigation: {
+      fields: [
+        'icon',
+        'navBadges',
+        'navTruncate',
+        'badges',
+        'toc',
+        'sidebar',
+        'collapse',
+        'editLink',
+        'prevNext',
+        'breadcrumb',
+      ],
+    },
+    experimental: {
+      search: {
+        indexed: true,
+      },
+    },
   },
   shadcn: {
     /**
@@ -29,7 +57,7 @@ export default defineNuxtConfig({
     componentDir: './components/ui'
   },
   devtools: { enabled: true },
-  extends: '@nuxt-themes/docus',
+
   future: {
     compatibilityVersion: 4,
   },
