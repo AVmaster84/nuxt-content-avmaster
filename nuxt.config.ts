@@ -30,10 +30,9 @@ export default defineNuxtConfig({
                 },
             },
           },
-    
-    // preview: {
-    //       api: 'https://api.nuxt.studio',
-    //   },
+        preview: {
+          api: 'https://api.nuxt.studio',
+      },
     },
   shadcn: {
     /**
