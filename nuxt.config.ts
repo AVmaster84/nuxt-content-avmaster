@@ -18,33 +18,23 @@ export default defineNuxtConfig({
     
   },
   content: {
-    highlight: {
-      theme: {
-        default: 'github-light',
-        dark: 'github-dark',
-      },
-      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini'],
+    build: {
+      markdown: {
+        toc: {depth: 3},
+        highlight: {
+            theme: {
+            default: 'github-light',
+            dark: 'github-dark',
+                    },
+            langs: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini'],
+                },
+            },
+          },
+    
+    // preview: {
+    //       api: 'https://api.nuxt.studio',
+    //   },
     },
-    navigation: {
-      fields: [
-        'icon',
-        'navBadges',
-        'navTruncate',
-        'badges',
-        'toc',
-        'sidebar',
-        'collapse',
-        'editLink',
-        'prevNext',
-        'breadcrumb',
-      ],
-    },
-    experimental: {
-      search: {
-        indexed: true,
-      },
-    },
-  },
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -55,6 +45,9 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui'
+  },
+  typescript: {
+    typeCheck: false
   },
   devtools: { enabled: true },
 
