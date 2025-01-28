@@ -1,3 +1,5 @@
+import DarkModeToggle from "./components/DarkModeToggle.vue";
+
 export default defineAppConfig({
   
   seo: {
@@ -10,13 +12,32 @@ export default defineAppConfig({
       dark: '/hiep_logo.svg'
     },
     search: true,
+    border: true,
+    darkModeToggle: true,
     colorMode: true,
-    links: [{
-      'icon': 'i-simple-icons-github',
-      'to': '/',
-      'target': '_blank',
-      'aria-label': 'Docs template on GitHub'
-    }]
+    nav: [{
+      title: 'Home',
+      links: [
+      {
+        title: 'OS',
+        to: '/os',
+        description: 'Operating System',
+        icon: 'i-heroicons-desktop-computer',
+        target: '_blank'
+      },
+      {
+        title: "Self-hosted",
+        to: '/self-hosted',
+        description: 'Self-hosted services',
+        icon: 'i-heroicons-server',
+        target: '_blank'
+      }
+      ],
+    }],
+  },
+  main: {
+    // fluid: true,
+    padded: true,
   },
   footer: {
     credits: 'Copyright © 2025',
