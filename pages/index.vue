@@ -1,8 +1,7 @@
 <template>
   <div
-    class="px-4 py-6 md:px-8"
-    :class="[config.main.padded && 'container']"
-  >
+    class="px-4 py-6 md:px-8 container max-w-screen-2xl">
+  
   <ContentRenderer v-if="page" :value="page" />
   <div v-else>Home not found</div>
     
@@ -21,3 +20,4 @@ useSeoMeta({
   description: page.value?.description
 })
 </script>
+

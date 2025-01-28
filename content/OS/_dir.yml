@@ -1,0 +1,9 @@
+title: OS (HĐH) - Mã nguồn mở
+icon: logos:ubuntu
+navigation.redirect: /os/introduction
+navBadges:
+  - value: New
+    type: lime
+sidebar:
+  style: group
+collapse: false

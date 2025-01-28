@@ -1,0 +1,9 @@
+title: Tự triển khai ứng dụng online
+icon: logos:kubernetes
+navigation.redirect: /self-hosted/introduction
+navBadges:
+  - value: New
+    type: lime
+sidebar:
+  style: group
+collapse: false

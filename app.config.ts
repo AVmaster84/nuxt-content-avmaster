@@ -1,9 +1,26 @@
 import DarkModeToggle from "./components/DarkModeToggle.vue";
 
 export default defineAppConfig({
-  
+  avmasterDocs: {
   seo: {
     siteName: 'AVMasTER - Knowledge Base'
+  },
+  banner: {
+    enable: false,
+    showClose: true,
+    content: 'Welcome to **AVMasTER Nuxt Project**',
+    to: 'https://github.com/avmaster84/starter',
+    target: '_blank',
+    border: true,
+  },
+  theme: {
+    customizable: true,
+    color: 'zinc',
+    radius: 0.5,
+  },
+  site: {
+    name: 'AVMasTER',
+    description: 'Personal Knowledge Base - hệ thống lại những gì đã học.',
   },
   header: {
     logo: {
@@ -11,6 +28,9 @@ export default defineAppConfig({
       light: '/hiep_logo_light.svg',
       dark: '/hiep_logo.svg'
     },
+    title: 'AVMasTER',
+    showTitle: true,
+    showTitleInMobile: false,
     search: true,
     border: true,
     darkModeToggle: true,
@@ -35,7 +55,16 @@ export default defineAppConfig({
       ],
     }],
   },
+  aside: {
+      useLevel: true,
+      collapse: false,
+      collapseLevel: 1,
+      folderStyle: 'default',
+    },
   main: {
+    breadCrumb: true,
+    showTitle: true,
+    codeCopyToast: true,
     // fluid: true,
     padded: true,
   },
@@ -65,6 +94,9 @@ export default defineAppConfig({
     }]
   },
   toc: {
+    enable: true,
+    enableInMobile: false,
+    links: [],
     title: 'Table of Contents',
     bottom: {
       title: 'Community',
@@ -86,5 +118,13 @@ export default defineAppConfig({
         target: '_blank'
       }]
     }
+  },
+  search: {
+    inAside: false,
+    enable: true,
+    style: 'input',
+    placeholder: 'Search...',
+    placeholderDetailed: 'Search documentation...',
+  }
   }
 })

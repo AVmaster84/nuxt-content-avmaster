@@ -1,20 +1,19 @@
 <template>
-  <div class="sticky top-0 z-40 bg-background/80 backdrop-blur-lg shadow"
-  :class="{ 'lg:border-b': config.header.border}">
-    <div class="flex h-18 items-center justify-between px-4 lg:px-8"
-    :class="{ 'border-b lg:border-none': config.header.border, 'container max-w-screen-2xl': config.main.padded }">
+  <div class="sticky top-5 z-40 bg-background/60 backdrop-blur-lg lg:border-b-foreground/80 lg:border-2 round-lg">
+    <div class="flex h-18 items-center justify-between px-4 lg:px-8 border-b lg:border-non container maz-w-screen-2xl">
       <LayoutHeaderLogo />
-      <LayoutHeaderNav class="hidden lg:flex flex-1"/>
+      <LayoutHeaderNavMenu class="hidden lg:flex flex-1"/>
       <div class="flex justify-end gap-2">
         <div class="flex">
-          <DarkModeToggle v-if="config.header.darkModeToogle" />
+          <DarkModeToggle />
         </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-  const config = useAppConfig()
+  const config = useAppConfig().avmasterDocs;
 </script>
 
 <style lang="scss" scoped>

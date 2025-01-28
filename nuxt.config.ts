@@ -14,6 +14,11 @@ export default defineNuxtConfig({
       collections: ['vue', 'radix-icons', 'vscode-icons', 'svg-logos', 'lucide']
     } 
   },
+  colorMode: {
+    classSuffix: '',
+    disableTransition: true,
+    dataValue: 'theme'
+  },
   fonts: {
     
   },

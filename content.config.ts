@@ -6,8 +6,10 @@ export default defineContentConfig({
       type: 'page',
       source: '**/*.md',
       schema: z.object({
+      path: z.string(),
       title: z.string(),
       description: z.string(),
+      banner: z.boolean(),
       seo: z.intersection(
         z.object({
                 title: z.string().optional(),

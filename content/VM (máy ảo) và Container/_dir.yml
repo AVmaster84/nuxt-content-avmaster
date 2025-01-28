@@ -1,0 +1,9 @@
+title: Virtual Machine (máy ảo) và Container
+icon: logos:docker-icon
+navigation.redirect: /vm/summary
+navBadges:
+  - value: New
+    type: lime
+sidebar:
+  style: group
+collapse: false
